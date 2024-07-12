@@ -1,3 +1,19 @@
 .App {
   text-align: center;
 }
+
+.App-header {
+  display: block;
+  margin: 20px 0;
+}
+
+.App-main {
+  display: block;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.App-footer {
+  display: block;
+  margin-top: 20px;
+}
