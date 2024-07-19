@@ -1,11 +1,28 @@
 .Dictionary {
-  background-color: blanchedalmond;
+  background: linear-gradient(
+    0deg,
+    rgb(205, 205, 205) 0%,
+    rgb(240, 240, 240) 100%
+  );
   padding: 50px;
 }
 
-.Results {
+.Results,
+.Meaning {
   text-align: start;
   margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  font-size: 20px;
+}
+
+form input {
+  margin-top: 7px;
+  padding-left: 5px;
 }
 
 .phonetic {
@@ -16,5 +33,18 @@
   list-style: none;
   display: inline-block;
   margin: 0;
-  padding: 0 15px 20px 0;
+  padding: 0 15px 0;
+}
+
+@media (max-width: 800px) {
+  .Dictionary {
+    padding: 20px;
+  }
+  .Results,
+  .Meaning {
+    padding: 15px;
+  }
+  form label {
+    font-size: 17px;
+  }
 }

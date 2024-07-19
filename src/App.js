@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <h1>Dictionary</h1>
+          <h1>React Dictionary</h1>
         </header>
 
         <main className="App-main">

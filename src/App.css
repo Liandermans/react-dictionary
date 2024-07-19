@@ -5,15 +5,19 @@
 .App-header {
   display: block;
   margin: 20px 0;
+  background: linear-gradient(0deg, rgb(39, 33, 105) 0%, rgb(85, 82, 140) 100%);
+  color: white;
+  padding: 20px 0;
+  font-family: serif;
 }
 
 .App-main {
   display: block;
-  max-width: 70%;
   margin: 0 auto;
+  font-family: serif;
 }
 
 .App-footer {
   display: block;
-  margin-top: 20px;
+  margin: 10px 0 20px;
 }

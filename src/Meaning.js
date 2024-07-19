@@ -13,7 +13,7 @@ export default function Meaning(props) {
   if (synonyms === null) {
     return (
       <div className="Meaning">
-        <h5>{partOfSpeech}</h5>
+        <h4>{partOfSpeech}</h4>
         <p>
           <strong>Definition: </strong>
           {definition}
@@ -30,7 +30,7 @@ export default function Meaning(props) {
   } else {
     return (
       <div className="Meaning">
-        <h5>{partOfSpeech}</h5>
+        <h4>{partOfSpeech}</h4>
         <p>
           <strong>Definition: </strong>
           {definition}
@@ -39,13 +39,16 @@ export default function Meaning(props) {
           <strong>Example: </strong>
           <em>{example}</em>
         </p>
-        {props.meaning.synonyms.map(function (synonym, index) {
-          return (
-            <ul className="synonyms">
-              <li key={index}>{synonym}</li>
-            </ul>
-          );
-        })}
+        <p>
+          <strong>Synonyms: </strong>
+          {props.meaning.synonyms.map(function (synonym, index) {
+            return (
+              <ul className="synonyms">
+                <li key={index}>{synonym}</li>
+              </ul>
+            );
+          })}
+        </p>
       </div>
     );
   }
