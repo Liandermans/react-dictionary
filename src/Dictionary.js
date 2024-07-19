@@ -33,7 +33,7 @@ export default function Dictionary() {
           <label>What word would you like to look up?</label> <br />
           <input
             type="search"
-            placeholder="i.e. coding, student, ..."
+            placeholder="i.e. coding, student, computer, ..."
             onChange={handleKeywordChange}
           />
         </form>
