@@ -12,7 +12,7 @@ export default function Meaning(props) {
 
   if (synonyms === null) {
     return (
-      <div className="Meaning">
+      <section className="Meaning">
         <h4>{partOfSpeech}</h4>
         <p>
           <strong>Definition: </strong>
@@ -25,11 +25,11 @@ export default function Meaning(props) {
         <p>
           <strong>Synonyms: </strong>-
         </p>
-      </div>
+      </section>
     );
   } else {
     return (
-      <div className="Meaning">
+      <section className="Meaning">
         <h4>{partOfSpeech}</h4>
         <p>
           <strong>Definition: </strong>
@@ -49,7 +49,7 @@ export default function Meaning(props) {
             );
           })}
         </p>
-      </div>
+      </section>
     );
   }
 }

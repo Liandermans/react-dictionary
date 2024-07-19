@@ -8,10 +8,10 @@ export default function Results(props) {
 
     return (
       <div>
-        <div className="Results">
+        <section className="Results">
           <h2>{word}</h2>
           <h5 className="phonetic">[{phonetic}]</h5>
-        </div>
+        </section>
         {props.results.meanings.map(function (meaning, index) {
           return (
             <div key={index}>
