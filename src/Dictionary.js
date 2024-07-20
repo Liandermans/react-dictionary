@@ -41,6 +41,7 @@ export default function Dictionary() {
         <form onSubmit={search}>
           <label>What word would you like to look up?</label> <br />
           <input
+            autoFocus
             type="search"
             placeholder="For example coding, student, computer, ..."
             onChange={handleKeywordChange}
