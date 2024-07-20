@@ -6,6 +6,21 @@ export default function Results(props) {
     let phonetic = props.results.phonetic;
     let word = props.results.word;
 
+    if (phonetic === null) {
+      phonetic = "-";
+    }
+
+    if (props.results.meanings === undefined) {
+      return (
+        <div>
+          <section className="Results">
+            <h2>Oops!</h2>
+            <p>This word could not be found. Please try a different one.</p>
+          </section>
+        </div>
+      );
+    }
+
     return (
       <div>
         <section className="Results">
