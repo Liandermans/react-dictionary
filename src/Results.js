@@ -11,14 +11,7 @@ export default function Results(props) {
     }
 
     if (props.results.meanings === undefined) {
-      return (
-        <div>
-          <section className="Results">
-            <h2>Oops!</h2>
-            <p>This word could not be found. Please try a different one.</p>
-          </section>
-        </div>
-      );
+      return null;
     }
 
     return (

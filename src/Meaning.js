@@ -39,7 +39,7 @@ export default function Meaning(props) {
           <strong>Example: </strong>
           <em>{example}</em>
         </p>
-        <p>
+        <div>
           <strong>Synonyms: </strong>
           {props.meaning.synonyms.map(function (synonym, index) {
             return (
@@ -48,7 +48,7 @@ export default function Meaning(props) {
               </ul>
             );
           })}
-        </p>
+        </div>
       </section>
     );
   }
